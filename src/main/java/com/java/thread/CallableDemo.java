@@ -25,7 +25,7 @@ public class CallableDemo {
 //        ExecutorService executor = Executors.newCachedThreadPool();
 //        MyThread thread = new MyThread();
 //        FutureTask<Integer> futureTask = new FutureTask<Integer>(thread);
-//        executor.submit(futureTask);
+//        executor.submit(futureTask)
 //        executor.shutdown();
 
         FutureTask<Integer> futureTask = new FutureTask<Integer>(new MyThread());
