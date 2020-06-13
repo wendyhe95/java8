@@ -30,6 +30,7 @@ public class SpinLockDemo {
         atomicReference.compareAndSet(thread,null);
         System.out.println(Thread.currentThread().getName()+" invoke myUnlock()======");
     }
+
     public static void main(String[] args) {
         SpinLockDemo spinLockDemo =new SpinLockDemo();
 

@@ -38,6 +38,7 @@ public class DemoClassInterface {
         System.out.println(bool);
     }
 
+    // 是否完全平方数
     public static boolean isPerfectSquare(int num) {
         for(int n = 1; num > 0; n += 2){
             num -= n;

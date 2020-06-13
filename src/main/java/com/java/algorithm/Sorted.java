@@ -1,4 +1,4 @@
-package com.java.test;
+package com.java.algorithm;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -7,7 +7,9 @@ import java.util.Arrays;
  * @Author: 95
  * @Date: 2020/5/20
  * 给出一个整数数组= [6，4，-3，5，-2，-1，0，1，-9]，实现一个函数，
- * 将所有正数向左移动，并将所有负数向右移动对。尽力将其时间复杂度设为O（n），并将空间复杂度设为O（1）。
+ * 将所有正数向左移动，并将所有负数向右移动。尽力将其时间复杂度设为O（n），并将空间复杂度设为O（1）。
+ *
+ * https://blog.csdn.net/z275598733/article/details/101459629
  */
 public class Sorted {
 
@@ -22,18 +24,19 @@ public class Sorted {
         int temp = 0; // 数组正数个数
         int count0 = 0; // 数组0的个数
         int[] arr2 = new int[arr.length];
+
         for (int value : arr) {
             if (value > 0){
-                temp++;  // temp 4
+                temp ++;  // temp 4
             }
             if (value == 0) {
-                count0++; // count0  1
+                count0 ++; // count0  1
             }
         }
         for (int value : arr) {
             if (count0 != 0) {
                 arr2[temp++] = 0;
-                count0--;
+                count0 --;
             }
             if (value > 0) {
                 arr2[x++] = value;

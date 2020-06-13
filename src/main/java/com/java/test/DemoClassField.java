@@ -1,6 +1,10 @@
 package com.java.test;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.reflect.Field;
+import java.util.Scanner;
 
 /**
  * java Class类的"成员变量"相关API的测试函数
@@ -9,13 +13,14 @@ import java.lang.reflect.Field;
  */
 public class DemoClassField {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         // getDeclaredField() 的测试函数
         testGetDeclaredField();
 
         // getField() 的测试函数
         testGetField() ;
+
     }
 
     /**
