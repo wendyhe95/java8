@@ -3,7 +3,7 @@ package com.java.algorithm;
 /**
  * Created by wendyhe on 2018/8/7.
  */
-public class StringTest_1 {
+public class SortByDictionary {
     /**
      * 对于给定的字符串 按字典顺序进行排序
      * @param args
